@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAD-Plans | CAD-Dienstleistungen im Holzbau</title>
+  <meta name="description" content="CAD-Plans – CAD-Zeichnungen als Dienstleistung für den Schweizer Holzbau. Ein Studenten-Schulprojekt." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2f5d50;
+      --secondary: #8fb9a8;
+      --accent: #d9ede5;
+      --dark: #1f2f2b;
+      --light: #f6f9f8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h4 {
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .about {
+      background: var(--accent);
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    .school-project {
+      background: #fff3cd;
+      border-left: 6px solid #f1c40f;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <h1>CAD-Plans</h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#leistungen">Meine Leistungen</a></li>
+          <li><a href="#consulting">Consulting</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero" id="home">
+        <h2>CAD-Zeichnungen für den modernen Holzbau</h2>
+        <p>
+          CAD-Plans unterstützt Zimmereien, Betriebe sowie Schüler und Studenten im Schweizer Holzbau
+          mit professionellen, effizienten CAD-Zeichnungen – genau dann, wenn die Zeit knapp wird.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section id="leistungen">
+    <div class="container">
+      <h3>Meine Leistungen</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>CAD-Zeichnungen Holzbau</h4>
+          <p>
+            Erstellung von Ausführungs-, Werk- und Detailplänen für den Holzbau
+            auf Basis von Skizzen oder bestehenden Konzepten.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Entlastung für Betriebe</h4>
+          <p>
+            Unterstützung bei Auftragsspitzen oder Personalmangel – Betriebe
+            können sich auf Montage und Organisation konzentrieren.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Unterstützung für Schüler & Studenten</h4>
+          <p>
+            Hilfe bei CAD-Arbeiten für Schule oder Ausbildung, wenn Zeit, Motivation
+            oder Erfahrung fehlen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="consulting">
+    <div class="container">
+      <h3>Consulting</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Projektberatung</h4>
+          <p>
+            Beratung bei der Planung von Holzbauprojekten, CAD-Strukturierung
+            und effizientem Zeichnungsaufbau.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Arbeitsprozesse optimieren</h4>
+          <p>
+            Unterstützung bei der Organisation von CAD-Arbeitsabläufen,
+            um Zeit und Kosten zu sparen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="container">
+      <h3>Über mich</h3>
+      <div class="about">
+        <p>
+          CAD-Plans ist ein fiktives Unternehmen, gegründet im Rahmen eines
+          Schulprojekts. Ziel ist es, den Ablauf einer Firmengründung kennenzulernen
+          und ein realistisches Geschäftsmodell im Bereich CAD und Holzbau zu entwickeln.
+        </p>
+        <p style="margin-top: 15px;">
+          Die Geschäftsidee basiert auf der Beobachtung, dass viele Zimmereien
+          stark ausgelastet sind und qualifizierte Zeichner fehlen. Gleichzeitig
+          haben Schüler und Studenten oft Schwierigkeiten oder wenig Motivation,
+          CAD-Zeichnungen zu erstellen.
+        </p>
+      </div>
+
+      <div class="school-project">
+        <strong>Hinweis Schulprojekt</strong>
+        <p>
+          Diese Webseite und das Unternehmen CAD-Plans wurden ausschließlich
+          für ein einmaliges Schulprojekt erstellt. Das Projekt wird nach Abschluss
+          nicht weitergeführt und verfolgt keinen kommerziellen Zweck.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        © CAD-Plans – Studentenprojekt | Schweizer Holzbau | Keine kommerzielle Nutzung
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
